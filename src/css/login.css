@@ -1,0 +1,227 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    gap: 22vw;
+}
+
+.left_box{
+    width: 33dvw;
+    height: 100dvh;
+    background-color: #154EC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main h1{
+    font-weight: 600;
+    color: rgb(38, 40, 36);
+    font-size: 36px;
+    line-height: 40px;
+
+    margin-bottom: 0px;
+}
+
+.main span{
+    font-weight: 400;
+    color: rgb(38, 40, 36);
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-top: 15px;
+}
+
+.main span a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(21, 78, 193);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main .email_box{
+    margin-bottom: 4px;
+}
+
+.main .email_box p{
+    font-weight: 700;
+    color: rgb(21, 78, 193);
+    font-size: 9px;
+    line-height: 14px;
+}
+
+.input_error{
+    background-color: #FCE8E8!important;
+}
+
+.main .email_box input{
+    width: calc(100% - 10px);
+    height: 16px;
+    background-color: white;
+}
+
+.main .password_box p{
+    font-weight: 700;
+    color: rgb(21, 78, 193);
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 4px;
+}
+
+.main .password_box input{
+    width: calc(100% - 10px);
+    height: 16px;
+} 
+
+input[type=text]{
+    padding: 10px;   
+}
+
+input[type=password]{
+    padding: 10px;   
+}
+
+.main input{
+    border-radius: 3px;
+    border: 1px solid #DEE5F2;
+}
+
+.main input:focus{
+    border:rgb(21, 78, 193) solid 0px;
+    padding: 11px;
+}
+
+.additional{
+    margin: 20px 0px;
+}
+
+.additional .keepSignedIn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.additional .keepSignedIn .cb{
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.additional .keepSignedIn .cb input{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+.additional .keepSignedIn .cb span{
+    font-weight: 400;
+    color: rgb(38, 40, 36);
+    font-size: 14px;
+    line-height: 20px;
+
+    margin: 0;
+}
+
+.additional .keepSignedIn .forgotPassword{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(21, 78, 193);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.additional .keepSignedIn:hover, .additional #keepSignedIn:hover{
+    cursor: pointer;
+}
+
+.main > button{
+    width: 100%;
+    height: 40px;
+    background-color: #154EC1;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.authentication_status{
+    font-weight: 400;
+    color: rgb(228, 34, 34);
+    font-size: 13px;
+    line-break: 19px;
+    margin-top: 3px;
+}
+
+.email_box{
+    position: relative;
+}
+
+.password_box{
+    position: relative;
+}
+
+.eye_container{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -5px;
+    top: 33px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye_container:hover{
+    cursor: pointer;
+}
+
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+}
+
+.eye-toggle{
+    opacity: 0;
+}
+
+.email_box .fa-triangle-exclamation{
+    position: absolute;
+    right: 0px;    
+    top: 43px;
+    opacity: 0;
+}
+
+.password_box .fa-triangle-exclamation{
+    position: absolute;
+    right: 30px;    
+    top: 40px;
+    opacity: 0;
+}
+
+.warn_toggle{
+    opacity: 1!important;
+}
+
+.main > button:hover{
+    cursor: pointer;
+}

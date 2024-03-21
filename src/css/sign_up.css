@@ -1,0 +1,210 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  gap: 22vw;
+}
+
+.left_box {
+  width: 33dvw;
+  height: 100dvh;
+  background-color: #154ec1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main h1 {
+  font-weight: 600;
+  color: rgb(38, 40, 36);
+  font-size: 36px;
+  line-height: 40px;
+
+  margin-bottom: 0px;
+}
+
+.main span {
+  font-weight: 400;
+  color: rgb(38, 40, 36);
+  font-size: 16px;
+  line-height: 20px;
+
+  margin-top: 15px;
+}
+
+.main span a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(21, 78, 193);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main .email_box {
+  margin-bottom: 4px;
+}
+
+.main .email_box p {
+  font-weight: 700;
+  color: rgb(21, 78, 193);
+  font-size: 9px;
+  line-height: 14px;
+}
+
+.input_error {
+  background-color: #fce8e8;
+}
+
+.main .email_box input {
+  width: calc(100% - 10px);
+  height: 16px;
+}
+
+.email_box .authentication_status{
+    margin-top: 3px;
+}
+
+.main .password_box p {
+  font-weight: 700;
+  color: rgb(21, 78, 193);
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 4px;
+}
+
+.main .password_box input {
+  width: calc(100% - 10px);
+  height: 16px;
+}
+
+.main .repeat_password_box p {
+  font-weight: 700;
+  color: rgb(21, 78, 193);
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 4px;
+}
+
+.main .repeat_password_box input {
+  width: calc(100% - 10px);
+  height: 16px;
+}
+
+input[type="text"] {
+  padding: 10px;
+}
+
+input[type="password"] {
+  padding: 10px;
+}
+
+.main input {
+  border-radius: 3px;
+  border: 1px solid #dee5f2;
+}
+
+.main input:focus {
+  border: rgb(21, 78, 193) solid 0px;
+  padding: 11px;
+}
+
+.main .repeat_password_box {
+  margin-bottom: 20px;
+}
+
+.main > button {
+  width: 100%;
+  height: 40px;
+  background-color: #154ec1;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.authentication_status {
+  font-weight: 400;
+  color: rgb(118, 124, 136);
+  font-size: 13px;
+  line-break: 19px;
+}
+
+.email_box{
+    position: relative;
+}
+
+.email_box .fa-triangle-exclamation{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    right: 0px;
+    top: 43px;
+    opacity: 0;
+}
+
+.password_box{
+    position: relative;
+}
+
+.repeat_password_box{
+    position: relative;
+}
+
+.password_box .fa-triangle-exclamation, .repeat_password_box .fa-triangle-exclamation{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    right: 27px;
+    top: 37px;
+    opacity: 0;
+}
+
+.password_box .eye_container, .repeat_password_box .eye_container{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+
+    right: 0px;
+    top: 33px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password_box .eye_container:hover, .repeat_password_box .eye_container:hover{
+    cursor: pointer;
+}
+
+.fa-eye{
+    position: absolute;
+    opacity: 1;
+}
+
+.fa-eye-slash{
+    position: absolute;
+    opacity: 0;
+}

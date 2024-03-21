@@ -1,0 +1,57 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.display {
+  margin: 10px 20px;
+}
+
+.getDisplay {
+  display: none;
+  width: 95dvw;
+  margin: 3dvw 0px;
+  padding-top: 0;
+}
+
+.getByIdDisplay {
+  margin-bottom: 20px;
+}
+
+.postDisplay {
+  display: none; 
+  width: 95dvw;
+  margin: 3dvw 0px;
+  padding-top: 0;
+}
+
+.putDisplay {
+  display: none;
+  width: 95dvw;
+  margin: 3dvw 0px;
+  padding-top: 0;
+}
+
+.deleteDisplay{
+  display: none;
+  width: 95dvw;
+  margin: 3dvw 0px;
+  padding-top: 0;
+}
